@@ -65,15 +65,10 @@ import { Zip } from '@ionic-native/zip/ngx';
     HTTP,
     DatePipe,Injectable,
     Zip,
-    {provide: RouteReuseStrategy, useClass: IonicRouteStrategy},
-        {
-            provide: HAMMER_GESTURE_CONFIG,
-            useClass: IonicGestureConfig
-        },
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   exports: [
-    FormsModule,BorderComponent
+    FormsModule
   ],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA,
